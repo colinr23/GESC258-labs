@@ -1,0 +1,122 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={GESC-258 Schedule},
+  pdfauthor={Colin Robertson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=2cm]{geometry}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{GESC-258 Schedule}
+\author{Colin Robertson}
+\date{2021-01-11}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{overview}{%
+\chapter*{Overview}\label{overview}}
+\addcontentsline{toc}{chapter}{Overview}
+
+This is will provide week-to-week scheduling of course activities in GESC-258.
+
+\hypertarget{introduction-and-research-design}{%
+\chapter{Introduction and Research Design}\label{introduction-and-research-design}}
+
+Introduction to the course and basics of geographical research design.
+
+\hypertarget{what-we-cover-this-week}{%
+\section{What We Cover this Week}\label{what-we-cover-this-week}}
+
+This week will review the course syllabus and some basic research design concepts and concepts of statistical analysis. This will lay the groundwork for data analysis tools which we will cover in subsequent weeks.
+
+\hypertarget{readings}{%
+\section{Readings}\label{readings}}
+
+\href{http://onlinestatbook.com/2/introduction/introduction.html}{Chapter one in online textbook}
+
+\hypertarget{lab}{%
+\section{Lab}\label{lab}}
+
+Attend your lab session on Friday possible to briefly meet your TA instructor and to get the course software installed on your computer. We will be using an open source software package called R and R-Studio for most of the work in this course. R-Studio is one of the most widely used software packages in data science, statistics and data analysis more generally. Many employers in the environmental field now greatly value skills in \href{https://www.r-project.org/}{R} - so even though the learning curve can be a little steeper, it is well worth the effort to learn this approach to data analysis.
+
+As a supplement to the lab materials, I highly recommend using \href{https://bookdown.org/ndphillips/YaRrr/}{YaRrr! The Pirate's Guide to R} - which has lots of great information and resources for learning R. You can \href{https://bookdown.org/ndphillips/YaRrr/installing-base-r-and-rstudio.html}{read chapter 2} for how to get it installed on your machine. The TA will verify everyone has a working installation of R on their machine in lab on Friday.
+
+\hypertarget{quiz}{%
+\section{Quiz}\label{quiz}}
+
+There is no quiz this week.
+
+\end{document}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 4 Sampling Distributions and Confidence Intervals | GESC-258 Schedule</title>
+  <meta name="description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 4 Sampling Distributions and Confidence Intervals | GESC-258 Schedule" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 4 Sampling Distributions and Confidence Intervals | GESC-258 Schedule" />
+  
+  <meta name="twitter:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+<meta name="date" content="2021-03-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="w3title.html"/>
+<link rel="next" href="hypothesis-testing-concepts.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 258</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html"><i class="fa fa-check"></i><b>1</b> Introduction and Research Design</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#what-we-cover-this-week"><i class="fa fa-check"></i><b>1.1</b> What We Cover this Week</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#readings"><i class="fa fa-check"></i><b>1.2</b> Readings</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#lab"><i class="fa fa-check"></i><b>1.3</b> Lab</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="w2title.html"><a href="w2title.html"><i class="fa fa-check"></i><b>2</b> Probability Distributions - Normal</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="w2title.html"><a href="w2title.html#w2cover"><i class="fa fa-check"></i><b>2.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="2.2" data-path="w2title.html"><a href="w2title.html#w2read"><i class="fa fa-check"></i><b>2.2</b> Readings</a></li>
+<li class="chapter" data-level="2.3" data-path="w2title.html"><a href="w2title.html#w2lab"><i class="fa fa-check"></i><b>2.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="w2title.html"><a href="w2title.html#w2data"><i class="fa fa-check"></i><b>2.3.1</b> Tree Circumference Data</a></li>
+<li class="chapter" data-level="2.3.2" data-path="w2title.html"><a href="w2title.html#recalling-measures-of-central-tendency-and-dispersion"><i class="fa fa-check"></i><b>2.3.2</b> Recalling measures of central tendency and dispersion</a></li>
+<li class="chapter" data-level="2.3.3" data-path="w2title.html"><a href="w2title.html#the-normal-distribution"><i class="fa fa-check"></i><b>2.3.3</b> The Normal Distribution</a></li>
+<li class="chapter" data-level="2.3.4" data-path="w2title.html"><a href="w2title.html#using-z-scores-instead-of-raw-data-to-more-easily-find-probabilities-from-a-normal-distribution"><i class="fa fa-check"></i><b>2.3.4</b> Using z-scores instead of raw data to more easily find probabilities from a normal distribution</a></li>
+<li class="chapter" data-level="2.3.5" data-path="w2title.html"><a href="w2title.html#assignment"><i class="fa fa-check"></i><b>2.3.5</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="w3title.html"><a href="w3title.html"><i class="fa fa-check"></i><b>3</b> Probability Distributions II - Others</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="w3title.html"><a href="w3title.html#w3cover"><i class="fa fa-check"></i><b>3.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="3.2" data-path="w3title.html"><a href="w3title.html#w3read"><i class="fa fa-check"></i><b>3.2</b> Readings</a></li>
+<li class="chapter" data-level="3.3" data-path="w3title.html"><a href="w3title.html#w3lab"><i class="fa fa-check"></i><b>3.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="w3title.html"><a href="w3title.html#how-does-honeycomb-patterns-in-sandstone-form"><i class="fa fa-check"></i><b>3.3.1</b> How does honeycomb patterns in sandstone form?</a></li>
+<li class="chapter" data-level="3.3.2" data-path="w3title.html"><a href="w3title.html#study-image"><i class="fa fa-check"></i><b>3.3.2</b> Study Image</a></li>
+<li class="chapter" data-level="3.3.3" data-path="w3title.html"><a href="w3title.html#analyzing-count-data"><i class="fa fa-check"></i><b>3.3.3</b> Analyzing Count Data</a></li>
+<li class="chapter" data-level="3.3.4" data-path="w3title.html"><a href="w3title.html#w3assign"><i class="fa fa-check"></i><b>3.3.4</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="w4title.html"><a href="w4title.html"><i class="fa fa-check"></i><b>4</b> Sampling Distributions and Confidence Intervals</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="w4title.html"><a href="w4title.html#w4cover"><i class="fa fa-check"></i><b>4.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="4.2" data-path="w4title.html"><a href="w4title.html#w4read"><i class="fa fa-check"></i><b>4.2</b> Readings</a></li>
+<li class="chapter" data-level="4.3" data-path="w4title.html"><a href="w4title.html#w4lab"><i class="fa fa-check"></i><b>4.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="w4title.html"><a href="w4title.html#sampling-distribution-of-the-mean"><i class="fa fa-check"></i><b>4.3.1</b> Sampling Distribution of the Mean</a></li>
+<li class="chapter" data-level="4.3.2" data-path="w4title.html"><a href="w4title.html#confidence-intervals"><i class="fa fa-check"></i><b>4.3.2</b> Confidence Intervals</a></li>
+<li class="chapter" data-level="4.3.3" data-path="w4title.html"><a href="w4title.html#w4assign"><i class="fa fa-check"></i><b>4.3.3</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html"><i class="fa fa-check"></i><b>5</b> Hypothesis Testing Concepts</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6cover"><i class="fa fa-check"></i><b>5.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="5.2" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6read"><i class="fa fa-check"></i><b>5.2</b> Readings</a></li>
+<li class="chapter" data-level="5.3" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6lab"><i class="fa fa-check"></i><b>5.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6assign"><i class="fa fa-check"></i><b>5.3.1</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html"><i class="fa fa-check"></i><b>6</b> Hypothesis Testing I</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7cover"><i class="fa fa-check"></i><b>6.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="6.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7read"><i class="fa fa-check"></i><b>6.2</b> Readings</a></li>
+<li class="chapter" data-level="6.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7lab"><i class="fa fa-check"></i><b>6.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#examining-with-fake-data"><i class="fa fa-check"></i><b>6.3.1</b> Examining with Fake Data</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#one-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.2</b> One-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#two-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.3</b> Two-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#gps-dataset"><i class="fa fa-check"></i><b>6.3.4</b> GPS Dataset</a></li>
+<li class="chapter" data-level="6.3.5" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#lab-assignment"><i class="fa fa-check"></i><b>6.3.5</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="anova.html"><a href="anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="anova.html"><a href="anova.html#w8cover"><i class="fa fa-check"></i><b>7.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="7.2" data-path="anova.html"><a href="anova.html#w8read"><i class="fa fa-check"></i><b>7.2</b> Readings</a></li>
+<li class="chapter" data-level="7.3" data-path="anova.html"><a href="anova.html#w8lab"><i class="fa fa-check"></i><b>7.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="anova.html"><a href="anova.html#analysis-of-variance-in-r"><i class="fa fa-check"></i><b>7.3.1</b> Analysis of Variance in R</a></li>
+<li class="chapter" data-level="7.3.2" data-path="anova.html"><a href="anova.html#w8labass"><i class="fa fa-check"></i><b>7.3.2</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>8</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="linear-regression.html"><a href="linear-regression.html#w9cover"><i class="fa fa-check"></i><b>8.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="8.2" data-path="linear-regression.html"><a href="linear-regression.html#w9read"><i class="fa fa-check"></i><b>8.2</b> Readings</a></li>
+<li class="chapter" data-level="8.3" data-path="linear-regression.html"><a href="linear-regression.html#w9lab"><i class="fa fa-check"></i><b>8.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-regression.html"><a href="linear-regression.html#w9labass"><i class="fa fa-check"></i><b>8.3.1</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li> &nbsp Instructor: Dr. Colin Robertson</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GESC-258 Schedule</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="w4title" class="section level1" number="4">
+<h1><span class="header-section-number">Week 4</span> Sampling Distributions and Confidence Intervals</h1>
+<p>This week we review the Normal distribution as a way into thinking about probability and comparing observations to a distribution.</p>
+<div id="w4cover" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> What we cover this week</h2>
+<ul>
+<li>Sampling distributions</li>
+<li>Sampling error</li>
+<li>Confidence intervals and estimation</li>
+</ul>
+</div>
+<div id="w4read" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Readings</h2>
+<p><a href="http://onlinestatbook.com/2/sampling_distributions/sampling_distributions.html" target="_blank">Chapter IX in online textbook</a></p>
+<p>Key sections:</p>
+<ul>
+<li>Introduction</li>
+<li>Sampling Distribution of the Mean</li>
+<li>Sampling Distribution of p</li>
+<li>Statistical Literacy</li>
+</ul>
+<p><a href="http://onlinestatbook.com/2/estimation/estimation.html" target="_blank">Chapter X in online textbook</a></p>
+<p>Key sections:</p>
+<ul>
+<li>Introduction</li>
+<li>Degrees of Freedom</li>
+<li>Confidence Intervals</li>
+<li>Confidence Intervals Intro</li>
+<li>Confidence Intervals for Mean</li>
+<li>Confidence Intervals for proportion</li>
+</ul>
+</div>
+<div id="w4lab" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Lab</h2>
+<p>This lab is due in the Dropbox on MyLearningSpace on <strong>Friday February 26th</strong></p>
+<p>Our third lab will cover sampling distributions and confidence intervals. To learn about these we are going to explore a new dataset which was painstakingly collected on a beach after a large storm. Our objective here is to try to estimate the average size of driftwood on the beach. Driftwood on beaches in coastal British Columbia is very common, and most are escaped logs from logging booms - while the odd one naturally uprooted shows up as well. Tracking how driftwood accumulates in different sections of beach is a fascinating combination of where logging takes place, how logs are transported, ocean currents and storm activity, etc. There is in fact a whole job category devoted to capturing escaped logs and selling them back to the logging companies - an occupation made famous by the epic Canadian 1980s television show - <a href="https://en.wikipedia.org/wiki/The_Beachcombers">The Beachcombers</a> - set in Gibson’s B.C.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/erd4vN40jYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>We set out to record the length of a sample of beach on the morning after a large storm. Our intended goal was to record the length of every notable log in the section of beach being sampled, but data collection had to be cut early due to an unruly field assistant. In all we collected the following 8 measurements:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="w4title.html#cb57-1" aria-hidden="true"></a>x =<span class="st"> </span><span class="kw">c</span>(<span class="dv">653</span>, <span class="dv">646</span>, <span class="dv">654</span>, <span class="dv">153</span>, <span class="dv">305</span>, <span class="dv">1200</span>, <span class="dv">1193</span>, <span class="dv">172</span>)</span></code></pre></div>
+<p>from which we can obtain a sample mean and sample standard deviation; as well as the <code>summary</code> command to see more descriptive statistics;</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="w4title.html#cb58-1" aria-hidden="true"></a><span class="kw">mean</span>(x)</span></code></pre></div>
+<pre><code>## [1] 622</code></pre>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="w4title.html#cb60-1" aria-hidden="true"></a><span class="kw">sd</span>(x)</span></code></pre></div>
+<pre><code>## [1] 411.5538</code></pre>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="w4title.html#cb62-1" aria-hidden="true"></a><span class="kw">summary</span>(x)</span></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   153.0   271.8   649.5   622.0   788.8  1200.0</code></pre>
+<p>which shows that there is a lot of variability in the lengths. We also have a tiny sample size which is not great. Lets look at the frequency distribution of our sample:</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="w4title.html#cb64-1" aria-hidden="true"></a><span class="kw">hist</span>(x, <span class="dt">xlab=</span><span class="st">&quot;Driftwood Length (cm)&quot;</span>, <span class="dt">main=</span><span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<p><img src="GESC258-2020_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p>which shows the data is not normally distributed. However - we know we can use the sampling distribution of the mean to calculate the standard error of the mean even for non-normal data. Generally we want a larger sample size (n &gt;= 30), but we will use what we have to illustrate. Recall that for the sampling distribution of <span class="math inline">\(\bar{x}\)</span> the mean of sample means <span class="math inline">\(\mu_{\bar{x}}\)</span> is equal to <span class="math inline">\(\mu\)</span> and that <span class="math inline">\(\sigma_{\bar{x}}\)</span> is equal to <span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span>. Now, because we do not know what <span class="math inline">\(\sigma\)</span> is - we have to use our sample estimate of it, which is <span class="math inline">\(s\)</span> which we calculate using the <code>sd</code> function -</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="w4title.html#cb65-1" aria-hidden="true"></a><span class="kw">sd</span>(x)</span></code></pre></div>
+<pre><code>## [1] 411.5538</code></pre>
+<p>so we could calculate <span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span> using</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="w4title.html#cb67-1" aria-hidden="true"></a><span class="kw">sd</span>(x) <span class="op">/</span><span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">8</span>)</span></code></pre></div>
+<pre><code>## [1] 145.5063</code></pre>
+<div id="sampling-distribution-of-the-mean" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Sampling Distribution of the Mean</h3>
+<p>The sampling distribution for our mean is estimated as coming from a normal distribution with <span class="math inline">\(\mu = \mu_{\bar{x}}\)</span> and <span class="math inline">\(\sigma_{\bar{x}}\)</span> = <span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span>. Let’s pretend we knew the actual values of <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> and use the following two values for the population, a <span class="math inline">\(\mu\)</span> of 860 and a <span class="math inline">\(\sigma\)</span> of 270.</p>
+<p>The z-score of the sample mean is:</p>
+<p><span class="math inline">\(z = \frac{\bar{x}-\mu}{\sigma_{\bar{x}}}\)</span></p>
+<p>so the question is how unusual is the mean we observed in our small sample? We can use the normal distribution as we have previously using the <code>pnorm</code> function. Let’s calculate the z-score:</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="w4title.html#cb69-1" aria-hidden="true"></a>(<span class="kw">mean</span>(x) <span class="op">-</span><span class="st"> </span><span class="dv">860</span>) <span class="op">/</span><span class="st"> </span>(<span class="dv">270</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">8</span>))</span></code></pre></div>
+<pre><code>## [1] -2.493206</code></pre>
+<p>right away we should notice a couple of things with this z-score;</p>
+<ol style="list-style-type: decimal">
+<li>The z-score is below 0 and therefore <span class="math inline">\(\bar{x} &lt; \mu\)</span></li>
+<li>The z-score is below -2 so this is a pretty unlikely outcome</li>
+</ol>
+<p>The probability of such a z-score or lower is</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="w4title.html#cb71-1" aria-hidden="true"></a><span class="kw">pnorm</span>(<span class="op">-</span><span class="fl">2.493206</span>, <span class="dt">lower.tail =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] 0.006329769</code></pre>
+<p>Now what would have happened if everything else was the same, but our sample size was only n = 2? Then we would be looking at:</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="w4title.html#cb73-1" aria-hidden="true"></a>zscore =<span class="st"> </span>(<span class="kw">mean</span>(x) <span class="op">-</span><span class="st"> </span><span class="dv">860</span>) <span class="op">/</span><span class="st"> </span>(<span class="dv">270</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">2</span>))</span>
+<span id="cb73-2"><a href="w4title.html#cb73-2" aria-hidden="true"></a><span class="kw">pnorm</span>(zscore, <span class="dt">lower.tail =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] 0.1062715</code></pre>
+<p>now this seems much more likely <em>even though the sample mean stayed the same</em> - this is because a sample statistic (or estimate of <span class="math inline">\(\mu\)</span> using <span class="math inline">\(\bar{x}\)</span>) is highly uncertain if we only measured 2 logs.</p>
+</div>
+<div id="confidence-intervals" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Confidence Intervals</h3>
+<p>A better way to capture the uncertainty in our sample statistic is with a confidence interval. Instead of calculating a z-score and finding a probability we invert that process - so we set the probability - which is our <em>confidence level</em>, then we find the associated value of z-score for this probability, then we find the interval of values around <span class="math inline">\(\bar{x}\)</span>.</p>
+<p>A generic formula for a confidence interval is:</p>
+<blockquote>
+<p>point estimate +/- critical value * standard error</p>
+</blockquote>
+<p>Now let’s go through the steps above:</p>
+<ol style="list-style-type: decimal">
+<li>Set the probability. There are common levels which we use such as 95% or 99% or 90%. We will use a 95% confidence level.</li>
+<li>Now we need to find a z-score associated with 95% probability. We do this by taking the inverse so 1-0.95. We could then use <code>qnorm</code> to find the z-score for 0.05. But this would be wrong because <code>qnorm</code> gives us one-tailed probabilities and we really need two-tailed (i.e., 0.05 split into the upper and lower tails), so we would use <code>qnorm(0.05/2)</code> which would give us a lower z-score associated with .025 probability. This is what we use as the <strong>critical value</strong> of the confidence interval.</li>
+<li>Now to find the interval in <code>R</code> we just need the standard error - which we already know is <span class="math inline">\(\frac{\sigma}{\sqrt{n}}\)</span></li>
+</ol>
+<p>So it would look something like:</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="w4title.html#cb75-1" aria-hidden="true"></a>z_crit =<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.05</span><span class="op">/</span><span class="dv">2</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb75-2"><a href="w4title.html#cb75-2" aria-hidden="true"></a>lower =<span class="st"> </span><span class="kw">mean</span>(x) <span class="op">-</span><span class="st"> </span>(z_crit <span class="op">*</span><span class="st"> </span>(<span class="dv">270</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">8</span>)))</span>
+<span id="cb75-3"><a href="w4title.html#cb75-3" aria-hidden="true"></a>upper =<span class="st"> </span><span class="kw">mean</span>(x) <span class="op">+</span><span class="st"> </span>(z_crit <span class="op">*</span><span class="st"> </span>(<span class="dv">270</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">8</span>)))</span>
+<span id="cb75-4"><a href="w4title.html#cb75-4" aria-hidden="true"></a><span class="kw">plot</span>(<span class="dt">x=</span><span class="kw">c</span>(lower, upper), <span class="dt">y=</span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>), <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="kw">min</span>(x),<span class="kw">max</span>(x)), <span class="dt">xlab=</span><span class="st">&quot;Driftwood Length (cm)&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;&quot;</span>, <span class="dt">col =</span> <span class="st">&quot;Black&quot;</span>)</span>
+<span id="cb75-5"><a href="w4title.html#cb75-5" aria-hidden="true"></a><span class="kw">points</span>(<span class="dt">x =</span> <span class="kw">mean</span>(x), <span class="dt">y =</span> <span class="dv">1</span>, <span class="dt">pch=</span><span class="dv">20</span>, <span class="dt">cex=</span><span class="dv">3</span>)</span>
+<span id="cb75-6"><a href="w4title.html#cb75-6" aria-hidden="true"></a></span>
+<span id="cb75-7"><a href="w4title.html#cb75-7" aria-hidden="true"></a><span class="co">#we could add another to it if we wanted</span></span>
+<span id="cb75-8"><a href="w4title.html#cb75-8" aria-hidden="true"></a>z_crit =<span class="st"> </span><span class="kw">qnorm</span>(<span class="fl">0.10</span><span class="op">/</span><span class="dv">2</span>, <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb75-9"><a href="w4title.html#cb75-9" aria-hidden="true"></a>lower =<span class="st"> </span><span class="kw">mean</span>(x) <span class="op">-</span><span class="st"> </span>(z_crit <span class="op">*</span><span class="st"> </span>(<span class="dv">270</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">8</span>)))</span>
+<span id="cb75-10"><a href="w4title.html#cb75-10" aria-hidden="true"></a>upper =<span class="st"> </span><span class="kw">mean</span>(x) <span class="op">+</span><span class="st"> </span>(z_crit <span class="op">*</span><span class="st"> </span>(<span class="dv">270</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">8</span>)))</span>
+<span id="cb75-11"><a href="w4title.html#cb75-11" aria-hidden="true"></a><span class="kw">lines</span>(<span class="dt">x =</span> <span class="kw">c</span>(lower, upper), <span class="dt">y=</span><span class="kw">c</span>(<span class="fl">1.2</span>, <span class="fl">1.2</span>), <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</span>
+<span id="cb75-12"><a href="w4title.html#cb75-12" aria-hidden="true"></a><span class="kw">points</span>(<span class="dt">x =</span> <span class="kw">mean</span>(x), <span class="dt">y =</span> <span class="fl">1.2</span>, <span class="dt">pch=</span><span class="dv">20</span>, <span class="dt">cex=</span><span class="dv">3</span>)</span></code></pre></div>
+<p><img src="GESC258-2020_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<p>So there is a lot of extra commands here you can ignore. The key thing being that what do we notice about the second (red) interval we created? It is narrower. This is because we set the probability value to be lower (i.e., we have lower confidence) - which basically means - we can be less sure (only 90% instead of 95%) about a narrower interval - for the same data.</p>
+<p>If you have made it this far, you may be are forgetting what the data actually represent. Recall these are driftwood lengths measured on a section of beach in B.C. We tried to sample a lot more but with no luck. The data here is used only for the purposes of illustration - but since I recorded our attempts at data collection - <a href="https://youtu.be/Ti_h7kQaIdo">here is a video of our beach sampling</a> - with some background music to set the scene. Watching this will not help with the lab but may be entertaining!</p>
+<p>The above procedure for a confidence interval works for when we have a normally distributed test statistic, that is why we use a z-score as the critical value. In cases where we have a small sample size we can actually use another distribution - the t distribution - as the critical value. In this way we can capture the greater uncertainty associated with very small sample sizes.</p>
+<p>We can use the <code>qt</code> function to get critical values from the t-distribution. Take a look at the help to see how to set the degrees of freedom.</p>
+</div>
+<div id="w4assign" class="section level3" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Assignment</h3>
+<p>Because our dataset was terrible this week and this is a lab which we have three weeks to complete, we are doing things a little differently. It is a challenge to create datasets that are of interest to all students so instead for this lab we are going to get you to find your own. This can be as simple or as complex as you want to make it. The key point is that you collect/create the dataset yourself (i.e., this is not taken from an example elsewhere).</p>
+<p>Try to get a sample size of at least 30. If collecting this dataset requires you going outside and measuring something - even better. Or this can be something related to sports, music, whatever interests you. Use Piazza to ask questions about suitable datasets if you are not sure. You could for example check the temperature at environment canada on this day for the past 30 years. Or you could check with goals against average for Toronto Maple Leafs goalies for the past 30 years. It is up to you - but the dataset needs to be unique to you and you will have to explain where it comes from in your write up.</p>
+<ol style="list-style-type: decimal">
+<li><p>Write a paragraph describing your dataset. Include how you acquired it, why you selected it, what the variable of interest is, whether there is any measurement error, sources of sampling error, bias, etc. Also include a histogram and a table with basic summmary statistics describing your dataset. The histogram and table should have descriptive captions. Include your dataset with your R commands. (out of 10)</p></li>
+<li><p>Create 90%, 95% and 99% confidence intervals for your data (using a sample mean). Plot these on graph. Include a sentence describing what these mean and commands used to generate the answer. (out of 10)</p></li>
+<li><p>Repeat everything for question 2 but this time use a t-critical value (i.e., you will have to use the <code>qt</code> function to find the critical value). You can use the same or a different variable (than that used in question 2) to analyze - use <code>sample</code> to create a random sample of size n = 20 if you have more than 20 observations in your dataset. (out of 10)</p></li>
+<li><p>Conduct your own analysis of the dataset. This could include calculating z-scores to find unusual values or groups of unusual values and any plots you want to explore. Write a paragrph commenting on the results and interpreting your findings. (out of 10)</p></li>
+</ol>
+
+<!-- # Confidence Intervals -->
+<!-- We have finished a nice book. -->
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="w3title.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hypothesis-testing-concepts.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GESC258-2020.pdf", "GESC258-2020.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

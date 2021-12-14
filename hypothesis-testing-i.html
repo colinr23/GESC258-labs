@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 6 Hypothesis Testing I | GESC-258 Schedule</title>
+  <meta name="description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 6 Hypothesis Testing I | GESC-258 Schedule" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 6 Hypothesis Testing I | GESC-258 Schedule" />
+  
+  <meta name="twitter:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+<meta name="date" content="2021-03-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="hypothesis-testing-concepts.html"/>
+<link rel="next" href="anova.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 258</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html"><i class="fa fa-check"></i><b>1</b> Introduction and Research Design</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#what-we-cover-this-week"><i class="fa fa-check"></i><b>1.1</b> What We Cover this Week</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#readings"><i class="fa fa-check"></i><b>1.2</b> Readings</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#lab"><i class="fa fa-check"></i><b>1.3</b> Lab</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="w2title.html"><a href="w2title.html"><i class="fa fa-check"></i><b>2</b> Probability Distributions - Normal</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="w2title.html"><a href="w2title.html#w2cover"><i class="fa fa-check"></i><b>2.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="2.2" data-path="w2title.html"><a href="w2title.html#w2read"><i class="fa fa-check"></i><b>2.2</b> Readings</a></li>
+<li class="chapter" data-level="2.3" data-path="w2title.html"><a href="w2title.html#w2lab"><i class="fa fa-check"></i><b>2.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="w2title.html"><a href="w2title.html#w2data"><i class="fa fa-check"></i><b>2.3.1</b> Tree Circumference Data</a></li>
+<li class="chapter" data-level="2.3.2" data-path="w2title.html"><a href="w2title.html#recalling-measures-of-central-tendency-and-dispersion"><i class="fa fa-check"></i><b>2.3.2</b> Recalling measures of central tendency and dispersion</a></li>
+<li class="chapter" data-level="2.3.3" data-path="w2title.html"><a href="w2title.html#the-normal-distribution"><i class="fa fa-check"></i><b>2.3.3</b> The Normal Distribution</a></li>
+<li class="chapter" data-level="2.3.4" data-path="w2title.html"><a href="w2title.html#using-z-scores-instead-of-raw-data-to-more-easily-find-probabilities-from-a-normal-distribution"><i class="fa fa-check"></i><b>2.3.4</b> Using z-scores instead of raw data to more easily find probabilities from a normal distribution</a></li>
+<li class="chapter" data-level="2.3.5" data-path="w2title.html"><a href="w2title.html#assignment"><i class="fa fa-check"></i><b>2.3.5</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="w3title.html"><a href="w3title.html"><i class="fa fa-check"></i><b>3</b> Probability Distributions II - Others</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="w3title.html"><a href="w3title.html#w3cover"><i class="fa fa-check"></i><b>3.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="3.2" data-path="w3title.html"><a href="w3title.html#w3read"><i class="fa fa-check"></i><b>3.2</b> Readings</a></li>
+<li class="chapter" data-level="3.3" data-path="w3title.html"><a href="w3title.html#w3lab"><i class="fa fa-check"></i><b>3.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="w3title.html"><a href="w3title.html#how-does-honeycomb-patterns-in-sandstone-form"><i class="fa fa-check"></i><b>3.3.1</b> How does honeycomb patterns in sandstone form?</a></li>
+<li class="chapter" data-level="3.3.2" data-path="w3title.html"><a href="w3title.html#study-image"><i class="fa fa-check"></i><b>3.3.2</b> Study Image</a></li>
+<li class="chapter" data-level="3.3.3" data-path="w3title.html"><a href="w3title.html#analyzing-count-data"><i class="fa fa-check"></i><b>3.3.3</b> Analyzing Count Data</a></li>
+<li class="chapter" data-level="3.3.4" data-path="w3title.html"><a href="w3title.html#w3assign"><i class="fa fa-check"></i><b>3.3.4</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="w4title.html"><a href="w4title.html"><i class="fa fa-check"></i><b>4</b> Sampling Distributions and Confidence Intervals</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="w4title.html"><a href="w4title.html#w4cover"><i class="fa fa-check"></i><b>4.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="4.2" data-path="w4title.html"><a href="w4title.html#w4read"><i class="fa fa-check"></i><b>4.2</b> Readings</a></li>
+<li class="chapter" data-level="4.3" data-path="w4title.html"><a href="w4title.html#w4lab"><i class="fa fa-check"></i><b>4.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="w4title.html"><a href="w4title.html#sampling-distribution-of-the-mean"><i class="fa fa-check"></i><b>4.3.1</b> Sampling Distribution of the Mean</a></li>
+<li class="chapter" data-level="4.3.2" data-path="w4title.html"><a href="w4title.html#confidence-intervals"><i class="fa fa-check"></i><b>4.3.2</b> Confidence Intervals</a></li>
+<li class="chapter" data-level="4.3.3" data-path="w4title.html"><a href="w4title.html#w4assign"><i class="fa fa-check"></i><b>4.3.3</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html"><i class="fa fa-check"></i><b>5</b> Hypothesis Testing Concepts</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6cover"><i class="fa fa-check"></i><b>5.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="5.2" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6read"><i class="fa fa-check"></i><b>5.2</b> Readings</a></li>
+<li class="chapter" data-level="5.3" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6lab"><i class="fa fa-check"></i><b>5.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6assign"><i class="fa fa-check"></i><b>5.3.1</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html"><i class="fa fa-check"></i><b>6</b> Hypothesis Testing I</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7cover"><i class="fa fa-check"></i><b>6.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="6.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7read"><i class="fa fa-check"></i><b>6.2</b> Readings</a></li>
+<li class="chapter" data-level="6.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7lab"><i class="fa fa-check"></i><b>6.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#examining-with-fake-data"><i class="fa fa-check"></i><b>6.3.1</b> Examining with Fake Data</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#one-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.2</b> One-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#two-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.3</b> Two-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#gps-dataset"><i class="fa fa-check"></i><b>6.3.4</b> GPS Dataset</a></li>
+<li class="chapter" data-level="6.3.5" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#lab-assignment"><i class="fa fa-check"></i><b>6.3.5</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="anova.html"><a href="anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="anova.html"><a href="anova.html#w8cover"><i class="fa fa-check"></i><b>7.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="7.2" data-path="anova.html"><a href="anova.html#w8read"><i class="fa fa-check"></i><b>7.2</b> Readings</a></li>
+<li class="chapter" data-level="7.3" data-path="anova.html"><a href="anova.html#w8lab"><i class="fa fa-check"></i><b>7.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="anova.html"><a href="anova.html#analysis-of-variance-in-r"><i class="fa fa-check"></i><b>7.3.1</b> Analysis of Variance in R</a></li>
+<li class="chapter" data-level="7.3.2" data-path="anova.html"><a href="anova.html#w8labass"><i class="fa fa-check"></i><b>7.3.2</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>8</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="linear-regression.html"><a href="linear-regression.html#w9cover"><i class="fa fa-check"></i><b>8.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="8.2" data-path="linear-regression.html"><a href="linear-regression.html#w9read"><i class="fa fa-check"></i><b>8.2</b> Readings</a></li>
+<li class="chapter" data-level="8.3" data-path="linear-regression.html"><a href="linear-regression.html#w9lab"><i class="fa fa-check"></i><b>8.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-regression.html"><a href="linear-regression.html#w9labass"><i class="fa fa-check"></i><b>8.3.1</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li> &nbsp Instructor: Dr. Colin Robertson</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GESC-258 Schedule</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hypothesis-testing-i" class="section level1" number="6">
+<h1><span class="header-section-number">Week 6</span> Hypothesis Testing I</h1>
+<p>This week we introduce hypothesis testing for means.</p>
+<div id="w7cover" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> What we cover this week</h2>
+<ul>
+<li>Hypothesis testing for means - one sample</li>
+<li>Hypothesis testing for means - two sample, independent groups</li>
+</ul>
+</div>
+<div id="w7read" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Readings</h2>
+<p><a href="https://onlinestatbook.com/2/tests_of_means/testing_means.html" target="_blank">Chapter XII in online textbook</a></p>
+<p>Key sections:</p>
+<ul>
+<li>Single Mean</li>
+<li>Difference between 2 means</li>
+<li>Correlated Pairs</li>
+<li>Statistical literacy</li>
+</ul>
+</div>
+<div id="w7lab" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Lab</h2>
+<p>This lab is due on the Dropbox on MyLearningSpace on <strong>Friday March 12th</strong></p>
+<p>We are going to explore one of my favourite geospatial technologies for our foray into hypothesis testing, Global Positioning Systems (GPS), which is a specific form of the more general Global Navigation Satellite Systems (GNSS). With the advent of GPS chips in mobile phones, location-aware applications and services are now extremely widely used. The quality of GPS sensors varies considerably and an affect how we use the positioning information we get from them. One particular issue with GPS is that it does not work in doors. If you have even a rough understanding of how GPS works, you will know you have to connect to satellites that receive messages to your receiver, and connecting to multiple satellites allows your exact position on the surface of the earth to be located. If we are inside, we cannot receive signals broadcast from space.</p>
+<p>Now this issue can get a little more complex when we are using GPS outdoors in areas where we do not have a clear view of the sky. In particular, GPS signals can reflect off of objects in the path between our receiver and the satellite - a phenoemna known as <a href="https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System#Multipath_effects">GPS multipath error</a> as the error is due to the <em>multiple paths</em> the signal takes. More advanced GPS receivers use different techniques to minimize this issue. However, multipath error can still be an issue in urban environments with tall buildings nearby or in forested areas with canopy cover.</p>
+<p>In this lab we will compare the GPS signals we received from two receivers - <a href="https://static.garmin.com/pumac/GPSMAP62_OM_EN.pdf">Garmin GPSmap 62s</a> and an Iphone App on an IPhone 8 Plus phone - the <a href="https://five.epicollect.net/">EpiCollect 5</a>. Garmin is considered recreational grade while the IPhone app is not a true GNSS receiver. What we want to explore is the difference in reported positioning for these two receivers. To do a proper error analysis of these units, we would really need to compare them to a third independent benchmark, such as a survey marker or a GPS position obtained from a highly accurate positioning system using differential corrections. Lacking that - we will simply compare the positions to each other, to ask; are the positions statistically different.</p>
+<div id="examining-with-fake-data" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Examining with Fake Data</h3>
+<p>We will first create some fake geographic data to examine. One of the great things about working with <code>R</code> is that you can usually find a package to do just about anything you want to do. In this case we want an R function to generate random geographic coordinates. We could for example, use <code>runif</code> which generates random uniform numbers and just set the min and max to -180 and +180 for longitude and -90 and +90 for latitude, but we might want finer control, for example to generate random points within some distance of a known location, or within the bounds of a country or neighbourhood.</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb76-1"><a href="hypothesis-testing-i.html#cb76-1" aria-hidden="true"></a><span class="co">#install.packages(&quot;randgeo&quot;)</span></span></code></pre></div>
+<p>This line above <strong>only ever needs to be run one time</strong> - this installs the package on your computer. You need to load the package in order to use it:</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="hypothesis-testing-i.html#cb77-1" aria-hidden="true"></a><span class="kw">library</span>(<span class="st">&quot;randgeo&quot;</span>)</span></code></pre></div>
+<p>We can see how to work with this package by looking at its <a href="https://cran.r-project.org/web/packages/randgeo/readme/README.html">documentation website</a>. If you do you will see that the function we want is called <code>rg_position</code> which we can get help for to see its arguments:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb78-1"><a href="hypothesis-testing-i.html#cb78-1" aria-hidden="true"></a>?rg_position</span></code></pre></div>
+<p>which you will see takes one argument for the number of points you want and another for a bbox - or a bounding box within which points should be generated. We will use the bbox argument to generate some random points within a specific area. <a href="http://bboxfinder.com/">Luckily there is a website that makes this process very easy</a> from which you can copy the bounding box coordinates.</p>
+<p>Given that we’re probably all desparate to travel at this point, I am going to go to one of my favorite places I have travelled to, <a href="https://www.google.com/search?q=arugam+bay&amp;sxsrf=ALeKk00ld2CQx0-28Kx7Vl-UBgkd7CW3gA:1614621081426&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwiC54Sg1I_vAhWLt54KHdJFArEQ_AUoAnoECBEQBA&amp;biw=1273&amp;bih=757">Arugum Bay in Sri Lanka</a>.</p>
+<div class="figure"><span id="fig:unnamed-chunk-44"></span>
+<img src="data/img/abay.png" alt="Arugam Bay, Sri Lanka." width="80%" />
+<p class="caption">
+Figure 6.1: Arugam Bay, Sri Lanka.
+</p>
+</div>
+<p>Feel free to change this somewhere you want to go! For my study area, we can see the bounding box is <code>81.808421,6.825655,81.851207,6.852244</code> and this is reported in Longitude, Latitude pairs for the box, and when we look at the <code>rg_position</code> help it tells it that it requires this information as <em>numeric vector of the form west (long), south (lat), east (long), north (lat).</em> Lets try it</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="hypothesis-testing-i.html#cb79-1" aria-hidden="true"></a><span class="kw">rg_position</span>(<span class="dt">count =</span> <span class="dv">1</span>, <span class="dt">bbox =</span> <span class="kw">c</span>(<span class="fl">81.808421</span>,<span class="fl">6.825655</span>,<span class="fl">81.851207</span>,<span class="fl">6.852244</span>))</span></code></pre></div>
+<pre><code>## [[1]]
+## [1] 81.837524  6.837419</code></pre>
+<p>Try plugging the result into google maps to see if it lands in the correct location (Google Maps takes latitude/longitude in the search box so you’ll have to switch the order).</p>
+<div class="figure"><span id="fig:unnamed-chunk-46"></span>
+<img src="data/img/points-on-googlemap.png" alt="Bounding box coordinates plotted on Google Maps" width="80%" />
+<p class="caption">
+Figure 6.2: Bounding box coordinates plotted on Google Maps
+</p>
+</div>
+<p>We can get more points by increasing the <code>count</code> argument as follows:</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="hypothesis-testing-i.html#cb81-1" aria-hidden="true"></a><span class="kw">rg_position</span>(<span class="dt">count =</span> <span class="dv">5</span>, <span class="dt">bbox =</span> <span class="kw">c</span>(<span class="fl">81.808421</span>,<span class="fl">6.825655</span>,<span class="fl">81.851207</span>,<span class="fl">6.852244</span>))</span></code></pre></div>
+<pre><code>## [[1]]
+## [1] 81.820510  6.836621
+## 
+## [[2]]
+## [1] 81.812479  6.848507
+## 
+## [[3]]
+## [1] 81.839422  6.836808
+## 
+## [[4]]
+## [1] 81.820202  6.829456
+## 
+## [[5]]
+## [1] 81.841141  6.844486</code></pre>
+<p>now the <code>rg_position</code> function returns a list of pairs of longitude/latitude pairs. We can convert them to a data frame with a little <code>r</code> magic -</p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="hypothesis-testing-i.html#cb83-1" aria-hidden="true"></a><span class="kw">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb83-2"><a href="hypothesis-testing-i.html#cb83-2" aria-hidden="true"></a>df1 &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="kw">matrix</span>(<span class="kw">unlist</span>(<span class="kw">rg_position</span>(<span class="dt">count =</span> <span class="dv">30</span>, <span class="dt">bbox =</span> <span class="kw">c</span>(<span class="fl">81.808421</span>,<span class="fl">6.825655</span>,<span class="fl">81.851207</span>,<span class="fl">6.852244</span>))), <span class="dt">ncol =</span> <span class="dv">2</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>))</span>
+<span id="cb83-3"><a href="hypothesis-testing-i.html#cb83-3" aria-hidden="true"></a>df2 &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="kw">matrix</span>(<span class="kw">unlist</span>(<span class="kw">rg_position</span>(<span class="dt">count =</span> <span class="dv">30</span>, <span class="dt">bbox =</span> <span class="kw">c</span>(<span class="fl">81.808421</span>,<span class="fl">6.825655</span>,<span class="fl">81.851207</span>,<span class="fl">6.852244</span>))), <span class="dt">ncol =</span> <span class="dv">2</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>))</span></code></pre></div>
+<p>so now we have two data frames each with 30 geographic cooridnates in our area of interest.</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb84-1"><a href="hypothesis-testing-i.html#cb84-1" aria-hidden="true"></a><span class="kw">head</span>(df1)</span></code></pre></div>
+<pre><code>##         X1       X2
+## 1 81.82073 6.846615
+## 2 81.82592 6.849133
+## 3 81.84866 6.826866
+## 4 81.83102 6.849383
+## 5 81.83201 6.837796
+## 6 81.84936 6.837709</code></pre>
+<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb86-1"><a href="hypothesis-testing-i.html#cb86-1" aria-hidden="true"></a><span class="kw">head</span>(df2)</span></code></pre></div>
+<pre><code>##         X1       X2
+## 1 81.83688 6.828177
+## 2 81.82485 6.832950
+## 3 81.84328 6.837580
+## 4 81.84308 6.847256
+## 5 81.84241 6.837350
+## 6 81.84070 6.842385</code></pre>
+<p>Now, back to GPS and hypothesis testing.</p>
+<p>We will pretend <code>df1</code> are coordinates from one GPS and <code>df2</code> are coordinates from another GPS. Since these were just randomly created we won’t expect the coordinates to be close - but the idea of comparing coordinates will be the same.</p>
+</div>
+<div id="one-sample-hypothesis-testing" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> One-Sample Hypothesis Testing</h3>
+<p>First we will test the hypothesis of whether the difference is equal to zero.</p>
+<p><span class="math inline">\(H_0: \mu = 0\)</span>
+<span class="math inline">\(H_A: \mu \ne 0\)</span></p>
+<p>where <span class="math inline">\(\mu\)</span> is the population mean difference. To start we have to compute our variable analysis. Given that we have a two-dimensional measure of location that we want to summarize with a single vector, we will convert the geographic coordinates to distance using <a href="">pythagorous theorum</a> which in <code>r</code> is just implementing <span class="math inline">\(d = \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}\)</span> as follows</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb88-1"><a href="hypothesis-testing-i.html#cb88-1" aria-hidden="true"></a>d &lt;-<span class="st"> </span><span class="kw">sqrt</span>((df1<span class="op">$</span>X1 <span class="op">-</span><span class="st"> </span>df2<span class="op">$</span>X1)<span class="op">^</span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span>(df1<span class="op">$</span>X2 <span class="op">-</span><span class="st"> </span>df2<span class="op">$</span>X2)<span class="op">^</span><span class="dv">2</span>)</span></code></pre></div>
+<p>so now we are testing <span class="math inline">\(H_0: \mu = 0\)</span> on the sample mean difference in <code>d</code>.</p>
+<p>The function for doing a t-test in <code>r</code> is <code>t.test</code>.</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="hypothesis-testing-i.html#cb89-1" aria-hidden="true"></a><span class="kw">t.test</span>(d, <span class="dt">mu=</span><span class="dv">0</span>)</span></code></pre></div>
+<pre><code>## 
+## 	One Sample t-test
+## 
+## data:  d
+## t = 11.851, df = 29, p-value = 1.227e-12
+## alternative hypothesis: true mean is not equal to 0
+## 95 percent confidence interval:
+##  0.01592541 0.02256879
+## sample estimates:
+## mean of x 
+## 0.0192471</code></pre>
+<p>As per lecture slides the way we calculate a t-statistic for our vector <code>d</code> is:</p>
+<p><span class="math inline">\(t = \frac{\bar{x} - \mu}{\sigma_{\bar{x}}}\)</span></p>
+<p>where <span class="math inline">\(\sigma_{\bar{x}}\)</span> is <span class="math inline">\(\frac{s}{\sqrt{n}}\)</span> which we can <em>hand-calculcate</em> in <code>r</code> as:</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="hypothesis-testing-i.html#cb91-1" aria-hidden="true"></a><span class="kw">mean</span>(d) <span class="op">/</span><span class="st"> </span>(<span class="kw">sd</span>(d)<span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">30</span>))</span></code></pre></div>
+<pre><code>## [1] 11.85081</code></pre>
+<p>which can see matches the output of the <code>t.test</code> function for the value of the <code>t</code>. We can evaluate probability as well:</p>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="hypothesis-testing-i.html#cb93-1" aria-hidden="true"></a><span class="kw">pt</span>(<span class="dt">q =</span> <span class="fl">11.85081</span>, <span class="dt">df =</span> <span class="dv">29</span>)</span></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<p>now what would happen if we actually wanted to test</p>
+<p><span class="math inline">\(H_0: \mu = 0.02\)</span></p>
+<p><span class="math inline">\(H_A: \mu \ne 0.02\)</span></p>
+<p>the above would change to</p>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="hypothesis-testing-i.html#cb95-1" aria-hidden="true"></a>(<span class="kw">mean</span>(d) <span class="op">-</span><span class="st"> </span><span class="fl">0.02</span>) <span class="op">/</span><span class="st"> </span>(<span class="kw">sd</span>(d)<span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">30</span>))</span></code></pre></div>
+<pre><code>## [1] -0.4635751</code></pre>
+<p>Can you see how our conclusion would change and what this would mean? How would result from <code>pt</code> change?</p>
+</div>
+<div id="two-sample-hypothesis-testing" class="section level3" number="6.3.3">
+<h3><span class="header-section-number">6.3.3</span> Two-Sample Hypothesis Testing</h3>
+<p>Lets suppose that the first 14 of our data points were collected on a day with overcast weather, and the remaining 16 points were collected on a clear day. We might want to examine whether there was a statistical difference between the two days. This would be comparing two groups; and we would need a two-sample hypothesis test to evaluate:</p>
+<p><span class="math inline">\(H_0: \mu_1 = \mu_2\)</span></p>
+<p><span class="math inline">\(H_A: \mu_1 \ne \mu_2\)</span></p>
+<p>which is to say, there is not a difference (ie the two means are equal) or there is (ie the two means are not equal). First we need to separate out the two groups. We can do this by subsetting into two new vectors as follows:</p>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="hypothesis-testing-i.html#cb97-1" aria-hidden="true"></a>day1 &lt;-<span class="st"> </span>d[<span class="dv">1</span><span class="op">:</span><span class="dv">14</span>]</span>
+<span id="cb97-2"><a href="hypothesis-testing-i.html#cb97-2" aria-hidden="true"></a>day2 &lt;-<span class="st"> </span>d[<span class="dv">15</span><span class="op">:</span><span class="dv">30</span>]</span></code></pre></div>
+<p>then we test using <code>t.test</code> again:</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb98-1"><a href="hypothesis-testing-i.html#cb98-1" aria-hidden="true"></a><span class="kw">t.test</span>(day1, day2)</span></code></pre></div>
+<pre><code>## 
+## 	Welch Two Sample t-test
+## 
+## data:  day1 and day2
+## t = -0.94932, df = 24.489, p-value = 0.3517
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -0.009495550  0.003508026
+## sample estimates:
+##  mean of x  mean of y 
+## 0.01765043 0.02064419</code></pre>
+<p>This result shows there is no statistical difference between the values in <code>d</code> between day 1 and day 2 because the p-value associated with the null hypothesis is <code>p=0.3517</code> which is far greater than any of the nominal significance levels we use in hypothesis testing. Note that the <code>df</code> is different here and no longer <code>n-1</code> as in the case with single sample hypothesis testing.</p>
+</div>
+<div id="gps-dataset" class="section level3" number="6.3.4">
+<h3><span class="header-section-number">6.3.4</span> GPS Dataset</h3>
+<p>I collected some GPS data using two method described above, the EpiCollect App for IPhone and a Garmin GPS Receiver. Below is a video showing some details of the data collection process, as well as a lengthy illustration of how we bring the field data into R. This may only be of interest to some students.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TgMvHY8kmOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>The data can be accessed as follows:</p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="hypothesis-testing-i.html#cb100-1" aria-hidden="true"></a>df &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;https://www.dropbox.com/s/f7xcibye2epgqgy/dfprocessed.csv?dl=1&quot;</span>)</span>
+<span id="cb100-2"><a href="hypothesis-testing-i.html#cb100-2" aria-hidden="true"></a>open_dis &lt;-<span class="st"> </span>df<span class="op">$</span>dis[<span class="kw">which</span>(df<span class="op">$</span>loctype<span class="op">==</span><span class="st">&quot;Open&quot;</span>)]</span>
+<span id="cb100-3"><a href="hypothesis-testing-i.html#cb100-3" aria-hidden="true"></a>forest_dis &lt;-<span class="st"> </span>df<span class="op">$</span>dis[<span class="kw">which</span>(df<span class="op">$</span>loctype<span class="op">==</span><span class="st">&quot;Forest&quot;</span>)]</span>
+<span id="cb100-4"><a href="hypothesis-testing-i.html#cb100-4" aria-hidden="true"></a><span class="kw">mean</span>(open_dis)</span></code></pre></div>
+<pre><code>## [1] 24.51924</code></pre>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="hypothesis-testing-i.html#cb102-1" aria-hidden="true"></a><span class="kw">mean</span>(forest_dis)</span></code></pre></div>
+<pre><code>## [1] 30.33474</code></pre>
+</div>
+<div id="lab-assignment" class="section level3" number="6.3.5">
+<h3><span class="header-section-number">6.3.5</span> Lab Assignment</h3>
+<ol style="list-style-type: decimal">
+<li><p>Generate random points for a <em>study area of interest to you</em> (as in the example above). Conduct a hypotheses test that the mean difference is a) equal to zero then b) greater than 0.02. For each use the <code>t.test</code> function as well as the <em>hand-calculated</em> method shown in the instructions above to confirm your answer. In your answer include your hypothesis statements, p-value, and a sentence interepting your results from each hypothesis test. Include a screenshot showing your bounding box coordinates plotted on Google Maps (out of 5)</p></li>
+<li><p>For the GPS data, is the mean difference significantly different from zero (<span class="math inline">\(\alpha = 0.05\)</span>)? Use the <code>t.test</code> function as well as the <em>hand-calculated</em> method shown in the instructions above to confirm your answer. In your answer include your hypothesis statements, p-value, and a sentence interepting your results from each hypothesis test. (out of 5)</p></li>
+<li><p>For the GPS data, was the difference between the two receivers statistically different between locations under forest canopy vs .open sky? Was there more or less difference when under forest canopy? Conduct both one tailed and two tailed hypothesis tests. For this question you can just use the <code>t.test</code> function. In your answer include your hypothesis statements, p-value, and a sentence interepting your results from each hypothesis test. (out of 5)</p></li>
+<li><p>For the GPS data, test whether the distance between the two receivers were statistically lower when accuracy was low (&lt;=12, vs high &gt;12). For this question you can just use the <code>t.test</code> function. In your answer include your hypothesis statements, p-value, and a sentence interepting your results from each hypothesis test. (out of 5)</p></li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="hypothesis-testing-concepts.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="anova.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GESC258-2020.pdf", "GESC258-2020.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

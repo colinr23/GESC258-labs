@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 2 Probability Distributions - Normal | GESC-258 Schedule</title>
+  <meta name="description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 2 Probability Distributions - Normal | GESC-258 Schedule" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 2 Probability Distributions - Normal | GESC-258 Schedule" />
+  
+  <meta name="twitter:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+<meta name="date" content="2021-03-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction-and-research-design.html"/>
+<link rel="next" href="w3title.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 258</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html"><i class="fa fa-check"></i><b>1</b> Introduction and Research Design</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#what-we-cover-this-week"><i class="fa fa-check"></i><b>1.1</b> What We Cover this Week</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#readings"><i class="fa fa-check"></i><b>1.2</b> Readings</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#lab"><i class="fa fa-check"></i><b>1.3</b> Lab</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="w2title.html"><a href="w2title.html"><i class="fa fa-check"></i><b>2</b> Probability Distributions - Normal</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="w2title.html"><a href="w2title.html#w2cover"><i class="fa fa-check"></i><b>2.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="2.2" data-path="w2title.html"><a href="w2title.html#w2read"><i class="fa fa-check"></i><b>2.2</b> Readings</a></li>
+<li class="chapter" data-level="2.3" data-path="w2title.html"><a href="w2title.html#w2lab"><i class="fa fa-check"></i><b>2.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="w2title.html"><a href="w2title.html#w2data"><i class="fa fa-check"></i><b>2.3.1</b> Tree Circumference Data</a></li>
+<li class="chapter" data-level="2.3.2" data-path="w2title.html"><a href="w2title.html#recalling-measures-of-central-tendency-and-dispersion"><i class="fa fa-check"></i><b>2.3.2</b> Recalling measures of central tendency and dispersion</a></li>
+<li class="chapter" data-level="2.3.3" data-path="w2title.html"><a href="w2title.html#the-normal-distribution"><i class="fa fa-check"></i><b>2.3.3</b> The Normal Distribution</a></li>
+<li class="chapter" data-level="2.3.4" data-path="w2title.html"><a href="w2title.html#using-z-scores-instead-of-raw-data-to-more-easily-find-probabilities-from-a-normal-distribution"><i class="fa fa-check"></i><b>2.3.4</b> Using z-scores instead of raw data to more easily find probabilities from a normal distribution</a></li>
+<li class="chapter" data-level="2.3.5" data-path="w2title.html"><a href="w2title.html#assignment"><i class="fa fa-check"></i><b>2.3.5</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="w3title.html"><a href="w3title.html"><i class="fa fa-check"></i><b>3</b> Probability Distributions II - Others</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="w3title.html"><a href="w3title.html#w3cover"><i class="fa fa-check"></i><b>3.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="3.2" data-path="w3title.html"><a href="w3title.html#w3read"><i class="fa fa-check"></i><b>3.2</b> Readings</a></li>
+<li class="chapter" data-level="3.3" data-path="w3title.html"><a href="w3title.html#w3lab"><i class="fa fa-check"></i><b>3.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="w3title.html"><a href="w3title.html#how-does-honeycomb-patterns-in-sandstone-form"><i class="fa fa-check"></i><b>3.3.1</b> How does honeycomb patterns in sandstone form?</a></li>
+<li class="chapter" data-level="3.3.2" data-path="w3title.html"><a href="w3title.html#study-image"><i class="fa fa-check"></i><b>3.3.2</b> Study Image</a></li>
+<li class="chapter" data-level="3.3.3" data-path="w3title.html"><a href="w3title.html#analyzing-count-data"><i class="fa fa-check"></i><b>3.3.3</b> Analyzing Count Data</a></li>
+<li class="chapter" data-level="3.3.4" data-path="w3title.html"><a href="w3title.html#w3assign"><i class="fa fa-check"></i><b>3.3.4</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="w4title.html"><a href="w4title.html"><i class="fa fa-check"></i><b>4</b> Sampling Distributions and Confidence Intervals</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="w4title.html"><a href="w4title.html#w4cover"><i class="fa fa-check"></i><b>4.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="4.2" data-path="w4title.html"><a href="w4title.html#w4read"><i class="fa fa-check"></i><b>4.2</b> Readings</a></li>
+<li class="chapter" data-level="4.3" data-path="w4title.html"><a href="w4title.html#w4lab"><i class="fa fa-check"></i><b>4.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="w4title.html"><a href="w4title.html#sampling-distribution-of-the-mean"><i class="fa fa-check"></i><b>4.3.1</b> Sampling Distribution of the Mean</a></li>
+<li class="chapter" data-level="4.3.2" data-path="w4title.html"><a href="w4title.html#confidence-intervals"><i class="fa fa-check"></i><b>4.3.2</b> Confidence Intervals</a></li>
+<li class="chapter" data-level="4.3.3" data-path="w4title.html"><a href="w4title.html#w4assign"><i class="fa fa-check"></i><b>4.3.3</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html"><i class="fa fa-check"></i><b>5</b> Hypothesis Testing Concepts</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6cover"><i class="fa fa-check"></i><b>5.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="5.2" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6read"><i class="fa fa-check"></i><b>5.2</b> Readings</a></li>
+<li class="chapter" data-level="5.3" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6lab"><i class="fa fa-check"></i><b>5.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6assign"><i class="fa fa-check"></i><b>5.3.1</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html"><i class="fa fa-check"></i><b>6</b> Hypothesis Testing I</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7cover"><i class="fa fa-check"></i><b>6.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="6.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7read"><i class="fa fa-check"></i><b>6.2</b> Readings</a></li>
+<li class="chapter" data-level="6.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7lab"><i class="fa fa-check"></i><b>6.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#examining-with-fake-data"><i class="fa fa-check"></i><b>6.3.1</b> Examining with Fake Data</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#one-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.2</b> One-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#two-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.3</b> Two-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#gps-dataset"><i class="fa fa-check"></i><b>6.3.4</b> GPS Dataset</a></li>
+<li class="chapter" data-level="6.3.5" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#lab-assignment"><i class="fa fa-check"></i><b>6.3.5</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="anova.html"><a href="anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="anova.html"><a href="anova.html#w8cover"><i class="fa fa-check"></i><b>7.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="7.2" data-path="anova.html"><a href="anova.html#w8read"><i class="fa fa-check"></i><b>7.2</b> Readings</a></li>
+<li class="chapter" data-level="7.3" data-path="anova.html"><a href="anova.html#w8lab"><i class="fa fa-check"></i><b>7.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="anova.html"><a href="anova.html#analysis-of-variance-in-r"><i class="fa fa-check"></i><b>7.3.1</b> Analysis of Variance in R</a></li>
+<li class="chapter" data-level="7.3.2" data-path="anova.html"><a href="anova.html#w8labass"><i class="fa fa-check"></i><b>7.3.2</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>8</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="linear-regression.html"><a href="linear-regression.html#w9cover"><i class="fa fa-check"></i><b>8.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="8.2" data-path="linear-regression.html"><a href="linear-regression.html#w9read"><i class="fa fa-check"></i><b>8.2</b> Readings</a></li>
+<li class="chapter" data-level="8.3" data-path="linear-regression.html"><a href="linear-regression.html#w9lab"><i class="fa fa-check"></i><b>8.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-regression.html"><a href="linear-regression.html#w9labass"><i class="fa fa-check"></i><b>8.3.1</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li> &nbsp Instructor: Dr. Colin Robertson</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GESC-258 Schedule</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="w2title" class="section level1" number="2">
+<h1><span class="header-section-number">Week 2</span> Probability Distributions - Normal</h1>
+<p>This week we review the Normal distribution as a way into thinking about probability and comparing observations to a distribution.</p>
+<div id="w2cover" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> What we cover this week</h2>
+<ul>
+<li>The Normal distribution</li>
+<li>Z-scores</li>
+<li>Calculating probability from z-scores</li>
+<li>Understanding how and why the Normal distributions is important</li>
+<li>Limitations and situations where the use of the Normal distribution is inappropriate</li>
+</ul>
+</div>
+<div id="w2read" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Readings</h2>
+<p><a href="http://onlinestatbook.com/2/normal_distribution/normal_distribution.html" target="_blank">Chapter VI in online textbook</a></p>
+<p>Key sections in readings:</p>
+<ul>
+<li>Introduction</li>
+<li>History</li>
+<li>Areas of Normal Distribution</li>
+<li>Varieties of Normal Distribution</li>
+<li>Standard Normal</li>
+</ul>
+</div>
+<div id="w2lab" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Lab</h2>
+<p>This lab is due on the Dropbox on MyLearningSpace on <strong>Friday January 29th</strong></p>
+<p>Our lab this week will examine trees in a coastal forest in British Columbia. In particular we have a small dataset of tree circumfrences which we want to analyze. These data were collected recently by me and my trusty field assistant, which you can review in its entirety below. You can see how time consuming data collection can be!</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nbR48cRu-2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>While tree circumference is easy to measure and tells us something about tree size and age, it is more customary to work with tree diameters. A typical measure used to measure tree is <a href="https://en.wikipedia.org/wiki/Diameter_at_breast_height">diameter-at-breast-height (DBH)</a> which is measured 4.5 feet from the ground using a DBH tape. Since we did not have one of these specialized DBH tapes, we can get started by converting our measures of circumference to diameter <a href="https://tutors.com/math-tutors/geometry-help/circumference-to-diameter#diameter-from-circumference">using the relationship between these two quantities</a> which is <span class="math inline">\(diameter=Circumference/\pi\)</span> recalling that <span class="math inline">\(\pi\)</span> is ratio of a circle’s circumference to its diameter which we can use 3.14159 as a value.</p>
+<p>So assuming we have a circumference of 214 cm, the diameter would be <span class="math inline">\(214/3.14159=68.11837\)</span> which in our dataset our expressed in units of centimeters.</p>
+<div id="w2data" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Tree Circumference Data</h3>
+<p>The data we collected in the video were as follows:</p>
+<ol style="list-style-type: decimal">
+<li>272</li>
+<li>272</li>
+<li>236</li>
+<li>154</li>
+<li>256</li>
+<li>156</li>
+<li>143</li>
+<li>269</li>
+<li>205</li>
+<li>175</li>
+</ol>
+<p>In order to bring the data into R, we need to assign these numbers to a <em>data frame</em> which is like a table, or to a <em>vector</em> which is just a bunch of numbers stored in order. A data frame can be made up of multiple vectors (as individual columns in a table). We will make a vector, since we do not have anything other than tree circumference to store. If we had collected information on tree species, condition, site characteristics, etc. we would want to store the data as a table, so we would create a data frame.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="w2title.html#cb1-1" aria-hidden="true"></a>x =<span class="st"> </span><span class="kw">c</span>(<span class="dv">272</span>,<span class="dv">272</span>,<span class="dv">236</span>,<span class="dv">154</span>,<span class="dv">256</span>,<span class="dv">156</span>,<span class="dv">143</span>,<span class="dv">269</span>,<span class="dv">205</span>,<span class="dv">175</span>)</span></code></pre></div>
+<p>What is happening in the command line above? First of all we are making an <em>assignment</em> using the <span class="math inline">\(=\)</span> operator. This means we are assigning whatever is on the right side of the <span class="math inline">\(=\)</span> to what is on the left side. In this case we are creating a <em>vector</em> of numbers representing our tree dataset to a variable called <span class="math inline">\(x\)</span>. The function <code>c</code> is being used which all it does is take some values and create a vector from them.</p>
+<p>Before going further, as we noted above we want to convert these measures of circumference to diameters. R has a special number for <span class="math inline">\(\pi\)</span> which we can use by just typing <code>pi</code> in the console. Try it:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="w2title.html#cb2-1" aria-hidden="true"></a>pi</span></code></pre></div>
+<pre><code>## [1] 3.141593</code></pre>
+<p>So if we wanted to divide all of our values by <span class="math inline">\(\pi\)</span> we could just type the following in the console:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="w2title.html#cb4-1" aria-hidden="true"></a>x<span class="op">/</span>pi</span></code></pre></div>
+<pre><code>##  [1] 86.58029 86.58029 75.12113 49.01972 81.48733 49.65634 45.51831 85.62536
+##  [9] 65.25353 55.70423</code></pre>
+<p>which is good, but this just displays them to the screen. In order to do something with these we want to store them in a new <em>variable</em>. Note that we can use any name we want for variables. We will create a new one called <code>dbh</code>:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="w2title.html#cb6-1" aria-hidden="true"></a>dbh =<span class="st"> </span>x<span class="op">/</span>pi</span></code></pre></div>
+<p>Now we have a new vector which has our data properly represented in values of dbh which we measured in the field. We can use this vector in subsequent work below.</p>
+</div>
+<div id="recalling-measures-of-central-tendency-and-dispersion" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Recalling measures of central tendency and dispersion</h3>
+<p>Say we want to calcuate some measures of central tendency to give us an idea what we might expect to find for a randomly selected tree in this forest. We could calcualte the <code>mean</code>, <code>median</code>, and <code>mode</code>. The mean and median are useful, but the mode doesn’t make much sense in this context, so we will focus on the mean and median. Recall the difference - the mean just the sum of values divided by the number of observations - which is expressed in math terms as
+<span class="math inline">\(\bar{x}=\frac{\sum\limits_{i = 1}^n{x_i}}{n}\)</span> which if this looks foreign to you not to worry. This is saying the mean, denoted by <span class="math inline">\(\bar{x}\)</span> is equal to the sum of the observation values (<span class="math inline">\(x_i\)</span> in the above) divided by <span class="math inline">\(n\)</span> which is what we used to denote the number of observations or the <strong>sample size</strong>. The sample size is a super important quantity in everything we’ll do. It is always simply a count of the number of measurements, but it can tell us a lot about how much certainty we should have in our data and statistics. For example, in the above, we only measured 10 trees, out of thousands in that forest. We may not be able totally rely on measures calculated from such a small sample (especially since the selection of trees was far from random!).</p>
+<p>So we know at this point we have the data we want stored in <code>dbh</code> and we know what we want to do with it - calculate the mean. We can use R just like a calculator with a few tricks thrown in to save us some time. One is the <code>sum</code> function. We can for example, sum up the dbh values:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="w2title.html#cb7-1" aria-hidden="true"></a><span class="kw">sum</span>(dbh)</span></code></pre></div>
+<pre><code>## [1] 680.5465</code></pre>
+<p>which gets us most of the way there, if we divide by our sample size, we will get the mean. We can do this in one step:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="w2title.html#cb9-1" aria-hidden="true"></a><span class="kw">sum</span>(dbh<span class="op">/</span><span class="dv">10</span>)</span></code></pre></div>
+<pre><code>## [1] 68.05465</code></pre>
+<p>which tells us that 68.0546537 is the mean dbh in the sample of trees. We can also use the built in <code>mean</code> function:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="w2title.html#cb11-1" aria-hidden="true"></a><span class="kw">mean</span>(dbh)</span></code></pre></div>
+<pre><code>## [1] 68.05465</code></pre>
+<p>We can also get the <code>median</code> with a simple function:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="w2title.html#cb13-1" aria-hidden="true"></a><span class="kw">median</span>(dbh)</span></code></pre></div>
+<pre><code>## [1] 70.18733</code></pre>
+<p>If we wanted to compute the standard deviation, which in math terms looks like <span class="math inline">\(\sigma = \sqrt {\frac{\sum\limits_{i = 1}^n {\left( {x_i - \bar x} \right)^2 }}{n}}\)</span> which is a bit more complicated than the mean, but if we work from the inside out, we are summing the squared deviations <span class="math inline">\(\left( {x_i - \bar x} \right)^2\)</span> from the mean, dividing that sum by the sample size <span class="math inline">\(n\)</span> and then square rooting the whole thing to get us out of squared terms. We can use the function <code>sd</code> in R to calculate the standard deviation:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="w2title.html#cb15-1" aria-hidden="true"></a><span class="kw">sd</span>(dbh)</span></code></pre></div>
+<pre><code>## [1] 16.97905</code></pre>
+<p>which we could also calculate ‘manually’ like:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="w2title.html#cb17-1" aria-hidden="true"></a>dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh)</span></code></pre></div>
+<pre><code>##  [1]  18.525635  18.525635   7.066479 -19.034931  13.432677 -18.398311
+##  [7] -22.536340  17.570706  -2.801127 -12.350424</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="w2title.html#cb19-1" aria-hidden="true"></a>(dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh))<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<pre><code>##  [1] 343.199166 343.199166  49.935132 362.328606 180.436817 338.497863
+##  [7] 507.886618 308.729699   7.846312 152.532963</code></pre>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="w2title.html#cb21-1" aria-hidden="true"></a><span class="kw">sum</span>((dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh))<span class="op">^</span><span class="dv">2</span>)</span></code></pre></div>
+<pre><code>## [1] 2594.592</code></pre>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="w2title.html#cb23-1" aria-hidden="true"></a><span class="kw">sum</span>((dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh))<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">10</span></span></code></pre></div>
+<pre><code>## [1] 259.4592</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="w2title.html#cb25-1" aria-hidden="true"></a><span class="kw">sqrt</span>(<span class="kw">sum</span>((dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh))<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">10</span>)</span></code></pre></div>
+<pre><code>## [1] 16.10774</code></pre>
+<p>You may be asking yourself (hopefully) - hey our manual method doesn’t match the output we got from the <code>sd</code> function? The reason is because there are actually two ways to calculate standard deviation - one way for sample data, and another way for population data. The good news is that the difference is very small - basically when we use sample data we have to reduce our sample size by one in order to get what is called an <em>unbiased estimate</em>. We will go into more detail about this later, but for now, recognize that the <code>sd</code> function defaults to the sample standard deviation. Since we are working with sample data, we should use the sample formula, and adjust our manual method:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="w2title.html#cb27-1" aria-hidden="true"></a><span class="kw">sqrt</span>(<span class="kw">sum</span>((dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh))<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span><span class="dv">9</span>)</span></code></pre></div>
+<pre><code>## [1] 16.97905</code></pre>
+<p>now they match!</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="w2title.html#cb29-1" aria-hidden="true"></a><span class="kw">sd</span>(dbh)</span></code></pre></div>
+<pre><code>## [1] 16.97905</code></pre>
+</div>
+<div id="the-normal-distribution" class="section level3" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> The Normal Distribution</h3>
+<p>Lets pretend that Clementine and I spent weeks out in that forest dutifully sampling trees so that we had a sample size of 1500! I can’t see that having gone well. But luckily we can create a dataset using simulation pretty easily, and we will based it on our actual sample mean and standard deviation. We will use a function called <code>rnorm</code> which basically will generate random samples from a given Normal distribution, we just have to supply the mean, standard deviation, and sample size.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="w2title.html#cb31-1" aria-hidden="true"></a>sim_dbh &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dt">n=</span><span class="dv">1500</span>, <span class="dt">mean=</span><span class="kw">mean</span>(x), <span class="dt">sd=</span><span class="kw">sd</span>(x))</span></code></pre></div>
+<p>We don’t want to look at all the values on the screen because there are too many. We can look at the first few, the last few, and then count the number of observations as follows:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="w2title.html#cb32-1" aria-hidden="true"></a><span class="kw">head</span>(sim_dbh)</span></code></pre></div>
+<pre><code>## [1] 193.2603 265.5825 315.8979 216.8749 215.1430 255.1160</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="w2title.html#cb34-1" aria-hidden="true"></a><span class="kw">tail</span>(sim_dbh)</span></code></pre></div>
+<pre><code>## [1] 200.8646 235.3436 243.4558 118.5888 254.8605 133.7334</code></pre>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="w2title.html#cb36-1" aria-hidden="true"></a><span class="kw">length</span>(sim_dbh)</span></code></pre></div>
+<pre><code>## [1] 1500</code></pre>
+<p>because these are randomly simulated values, yours may differ a bit from what you see here, but there should be 1500 values.</p>
+<p>We can look at the <strong>distribution</strong> of values by plotting the histogram:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="w2title.html#cb38-1" aria-hidden="true"></a><span class="kw">hist</span>(sim_dbh, <span class="dt">xlab =</span> <span class="st">&quot;Simulated DBH(cm) Values&quot;</span>, <span class="dt">main=</span><span class="st">&quot;&quot;</span>)</span></code></pre></div>
+<p><img src="GESC258-2020_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>We can also create a line showing the theoretical distribution that would be the population standard deviation:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="w2title.html#cb39-1" aria-hidden="true"></a>x =<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>,<span class="dv">200</span>,.<span class="dv">1</span>)</span>
+<span id="cb39-2"><a href="w2title.html#cb39-2" aria-hidden="true"></a>y =<span class="st"> </span><span class="kw">dnorm</span>(x, <span class="dt">mean=</span><span class="kw">mean</span>(dbh), <span class="dt">sd=</span><span class="kw">sd</span>(dbh))</span>
+<span id="cb39-3"><a href="w2title.html#cb39-3" aria-hidden="true"></a><span class="kw">plot</span>(x,y, <span class="dt">type=</span><span class="st">&quot;l&quot;</span>, <span class="dt">main=</span><span class="st">&quot;Normal Distribution&quot;</span>)</span></code></pre></div>
+<p><img src="GESC258-2020_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>The key point here is that from this smoothly varying distribution, we can calculate probabilities. Say we sampled a tree with a dbh of 100, we can ask the question - what is the probability of finding a tree with a dbh of 100 or greater from this distribution, that is akin to finding the area under the curve for everything to the right of the 100 value on the x-axis. We will use a special probability function in R to get this, it is called <code>pnorm</code></p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="w2title.html#cb40-1" aria-hidden="true"></a><span class="kw">pnorm</span>(<span class="dt">q=</span><span class="dv">100</span>, <span class="dt">mean =</span> <span class="kw">mean</span>(dbh), <span class="dt">sd=</span><span class="kw">sd</span>(dbh), <span class="dt">lower.tail =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<pre><code>## [1] 0.02995489</code></pre>
+<p>which tells us that the probability of sampling a tree with a dbh value of 100 <em>or greater</em> is 0.03 - so pretty unlikely.</p>
+</div>
+<div id="using-z-scores-instead-of-raw-data-to-more-easily-find-probabilities-from-a-normal-distribution" class="section level3" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Using z-scores instead of raw data to more easily find probabilities from a normal distribution</h3>
+<p>You may have covered z-scores in GESC-254, but as a refresher, it is simply a score we can calculate for every observation which standardizes the data to a standard normal distribution. This means it eliminates the units of the data (i.e., we’re no longer in the centimeters we measured) - but it makes scores comparable across datasets and easier to quickly interpret.</p>
+<p>The z-score formula is <span class="math inline">\(z_i = \frac{x_i - \bar{x}}{\sigma}\)</span> which is just the observation, minus the mean, divided by the standard deviation. We’ll go back to our smaller dataset to illustrate:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="w2title.html#cb42-1" aria-hidden="true"></a>(dbh <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh)) <span class="op">/</span><span class="st"> </span><span class="kw">sd</span>(dbh)</span></code></pre></div>
+<pre><code>##  [1]  1.0910881  1.0910881  0.4161882 -1.1210836  0.7911326 -1.0835892
+##  [7] -1.3273030  1.0348464 -0.1649755 -0.7273920</code></pre>
+<p>z-scores have the properties that values less than zero are for observations below the mean, values greater than zero are for observations above the mean, and values of zero correspond to the mean (which are rare). Moving back to our hypothetical tree with a dbh of 100, lets calculate its z-score:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="w2title.html#cb44-1" aria-hidden="true"></a>(<span class="dv">100</span> <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(dbh)) <span class="op">/</span><span class="st"> </span><span class="kw">sd</span>(dbh)</span></code></pre></div>
+<pre><code>## [1] 1.881457</code></pre>
+<p>which gives us a z-score of 1.881457 If we checked the probability value associated with this z-score we would see that it matched the one we got above, we just no longer have to specify the mean and sd because this is referenced to a <em>standard normal distribution</em></p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="w2title.html#cb46-1" aria-hidden="true"></a><span class="kw">pnorm</span>(<span class="fl">1.881457</span>, <span class="dt">lower.tail=</span><span class="ot">FALSE</span>)</span></code></pre></div>
+<pre><code>## [1] 0.02995489</code></pre>
+</div>
+<div id="assignment" class="section level3" number="2.3.5">
+<h3><span class="header-section-number">2.3.5</span> Assignment</h3>
+<ol style="list-style-type: decimal">
+<li><p>Calculate the probability of finding a tree with a dbh of 90 or greater based on the sample mean and sample standard deviation above. What is the z-score associated with a dbh of 90 cm? Include commands used to generate the answer. (out of 3)</p></li>
+<li><p>Repeat question 1 for a distribution with a mean of 75 and a standard deviation of 30. Include a sentence intepreting what the difference in the two answers means. (out of 4)</p></li>
+<li><p>Create a new dataset with a mean and standard deviation of your choosing and a sample size of 100. Plot the histogram being sure to label axes appropriately. (out of 3)</p></li>
+<li><p>Do you think the sample of trees we collected was representative of the wider forest? What would be some potential issues with inferring characteristics of the forest from this dataset? (out of 5)</p></li>
+<li><p>What other types of data could we have collected? What would be of greatest value if we were aiming to identify the conservation value of the forest to a community group? (out of 5)</p></li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction-and-research-design.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="w3title.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GESC258-2020.pdf", "GESC258-2020.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

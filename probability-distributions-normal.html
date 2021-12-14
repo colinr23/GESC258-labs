@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 2 Probability Distributions - Normal | GESC-258 Schedule</title>
+  <meta name="description" content="Schedule and term plan for GESC 258, Winter 2021." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 2 Probability Distributions - Normal | GESC-258 Schedule" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Schedule and term plan for GESC 258, Winter 2021." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 2 Probability Distributions - Normal | GESC-258 Schedule" />
+  
+  <meta name="twitter:description" content="Schedule and term plan for GESC 258, Winter 2021." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+<meta name="date" content="2021-01-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction-and-research-design.html"/>
+
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 258</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html"><i class="fa fa-check"></i><b>1</b> Introduction and Research Design</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#what-we-cover-this-week"><i class="fa fa-check"></i><b>1.1</b> What We Cover this Week</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#readings"><i class="fa fa-check"></i><b>1.2</b> Readings</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#lab"><i class="fa fa-check"></i><b>1.3</b> Lab</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#quiz"><i class="fa fa-check"></i><b>1.4</b> Quiz</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="probability-distributions-normal.html"><a href="probability-distributions-normal.html"><i class="fa fa-check"></i><b>2</b> Probability Distributions - Normal</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#what-we-cover-this-week"><i class="fa fa-check"></i><b>2.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#readings"><i class="fa fa-check"></i><b>2.2</b> Readings</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#lab"><i class="fa fa-check"></i><b>2.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="probability-distributions-normal.html"><a href="probability-distributions-normal.html#tree-circumference-data"><i class="fa fa-check"></i><b>2.3.1</b> Tree Circumference Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#quiz"><i class="fa fa-check"></i><b>2.4</b> Quiz</a></li>
+</ul></li>
+<li class="divider"></li>
+<li> &nbsp Instructor: Dr. Colin Robertson</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GESC-258 Schedule</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="probability-distributions---normal" class="section level1" number="2">
+<h1><span class="header-section-number">Week 2</span> Probability Distributions - Normal</h1>
+<p>This week we review the Normal distribution as a way into thinking about probability and comparing observations to a distribution.</p>
+<div id="what-we-cover-this-week" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> What we cover this week</h2>
+<ul>
+<li>The Normal distribution</li>
+<li>Z-scores</li>
+<li>Calculating probability from z-scores</li>
+<li>Understanding how and why the Normal distributions is important</li>
+<li>Limitations and situations where the use of the Normal distribution is inappropriate</li>
+</ul>
+</div>
+<div id="readings" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Readings</h2>
+<p><a href="http://onlinestatbook.com/2/normal_distribution/normal_distribution.html" target="_blank">Chapter VI in online textbook</a></p>
+<p>Key sections in readings:</p>
+<ul>
+<li>Introduction</li>
+<li>History</li>
+<li>Areas of Normal Distribution</li>
+<li>Varieties of Normal Distribution</li>
+<li>Standard Normal</li>
+</ul>
+</div>
+<div id="lab" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Lab</h2>
+<p>Our lab this week will examine trees in a coastal forest in British Columbia. In particular we have a small dataset of tree circumfrences which we want to analyze. These data were collected recently by me and my trusty field assistant, which you can review in its entirety below. You can see how time consuming data collection can be!</p>
+<p>While tree circumference is easy to measure and tells us something about tree size and age, it is more customary to work with tree diameters. A typical measure used to measure tree is <a href="https://en.wikipedia.org/wiki/Diameter_at_breast_height">diameter-at-breast-height (DBH)</a> which is measured 4.5 feet from the ground using a DBH tape. Since we did not have one of these specialized DBH tapes, we can get started by converting our measures of circumference to diameter <a href="https://tutors.com/math-tutors/geometry-help/circumference-to-diameter#diameter-from-circumference">using the relationship between these two quantities</a> which is <span class="math inline">\(diameter=Circumference/\pi\)</span> recalling that <span class="math inline">\(\pi\)</span> is ratio of a circle’s circumference to its diameter which we can use 3.14159 as a value.</p>
+<p>So assuming we have a circumference of 214 cm, the diameter would be <span class="math inline">\(214/3.14159=68.11837\)</span> which in our dataset our expressed in units of centimeters.</p>
+<div id="tree-circumference-data" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Tree Circumference Data</h3>
+<p>The data we collected in the video were as follows:</p>
+<ol style="list-style-type: decimal">
+<li>272</li>
+<li>272</li>
+<li>236</li>
+<li>154</li>
+<li>256</li>
+<li>156</li>
+<li>143</li>
+<li>269</li>
+<li>205</li>
+<li>175</li>
+</ol>
+<p>In order to bring the data into R, we need to assign these numbers to a <em>data frame</em> which is like a table, or to a <em>vector</em> which is just a bunch of numbers stored in order. A data frame can be made up of multiple vectors (as individual columns in a table). We will make a vector, since we do not have anything other than tree circumference to store. If we had collected information on tree species, condition, site characteristics, etc. we would want to store the data as a table, so we would create a data frame.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="probability-distributions-normal.html#cb1-1" aria-hidden="true"></a>x =<span class="st"> </span><span class="kw">c</span>(<span class="dv">272</span>,<span class="dv">272</span>,<span class="dv">236</span>,<span class="dv">154</span>,<span class="dv">256</span>,<span class="dv">156</span>,<span class="dv">143</span>,<span class="dv">269</span>,<span class="dv">205</span>,<span class="dv">172</span>)</span></code></pre></div>
+<p>What is happening in the command line above? First of all we are making an <em>assignment</em> using the <span class="math inline">\(=\)</span> operator. This means we are assigning whatever is on the right side of the <span class="math inline">\(=\)</span> to what is on the left side. In this case we are creating a <em>vector</em> of numbers representing our tree dataset to a variable called <span class="math inline">\(x\)</span>.</p>
+</div>
+</div>
+<div id="quiz" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Quiz</h2>
+
+<!-- # Probability Distributions II -->
+<!-- We describe our methods in this chapter. -->
+
+<!-- # Sampling Distributions -->
+<!-- Some _significant_ applications are demonstrated in this chapter. -->
+<!-- ## Example one -->
+<!-- ## Example two -->
+
+<!-- # Confidence Intervals -->
+<!-- We have finished a nice book. -->
+
+<!-- # Hypothesis Testing Concepts -->
+<!-- We have finished a nice book. -->
+
+<!-- # Hypothesis Tests I -->
+<!-- We have finished a nice book. -->
+
+<!-- # Hypothesis Tests II -->
+<!-- We have finished a nice book. -->
+
+<!-- # Hypothesis Tests III -->
+<!-- We have finished a nice book. -->
+
+<!-- # Linear Regression Concepts -->
+<!-- We have finished a nice book. -->
+
+<!-- # Regression Inference -->
+<!-- We have finished a nice book. -->
+
+<!-- # Critical Research Reading -->
+<!-- We have finished a nice book. -->
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction-and-research-design.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GESC258-2020.pdf", "GESC258-2020.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

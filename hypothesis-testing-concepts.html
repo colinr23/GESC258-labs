@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Week 5 Hypothesis Testing Concepts | GESC-258 Schedule</title>
+  <meta name="description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Week 5 Hypothesis Testing Concepts | GESC-258 Schedule" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Week 5 Hypothesis Testing Concepts | GESC-258 Schedule" />
+  
+  <meta name="twitter:description" content="Schedule, readings, and labs for GESC 258, Winter 2021." />
+  
+
+<meta name="author" content="Colin Robertson" />
+
+
+<meta name="date" content="2021-03-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="w4title.html"/>
+<link rel="next" href="hypothesis-testing-i.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">GESC 258</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html"><i class="fa fa-check"></i><b>1</b> Introduction and Research Design</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#what-we-cover-this-week"><i class="fa fa-check"></i><b>1.1</b> What We Cover this Week</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#readings"><i class="fa fa-check"></i><b>1.2</b> Readings</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction-and-research-design.html"><a href="introduction-and-research-design.html#lab"><i class="fa fa-check"></i><b>1.3</b> Lab</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="w2title.html"><a href="w2title.html"><i class="fa fa-check"></i><b>2</b> Probability Distributions - Normal</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="w2title.html"><a href="w2title.html#w2cover"><i class="fa fa-check"></i><b>2.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="2.2" data-path="w2title.html"><a href="w2title.html#w2read"><i class="fa fa-check"></i><b>2.2</b> Readings</a></li>
+<li class="chapter" data-level="2.3" data-path="w2title.html"><a href="w2title.html#w2lab"><i class="fa fa-check"></i><b>2.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="w2title.html"><a href="w2title.html#w2data"><i class="fa fa-check"></i><b>2.3.1</b> Tree Circumference Data</a></li>
+<li class="chapter" data-level="2.3.2" data-path="w2title.html"><a href="w2title.html#recalling-measures-of-central-tendency-and-dispersion"><i class="fa fa-check"></i><b>2.3.2</b> Recalling measures of central tendency and dispersion</a></li>
+<li class="chapter" data-level="2.3.3" data-path="w2title.html"><a href="w2title.html#the-normal-distribution"><i class="fa fa-check"></i><b>2.3.3</b> The Normal Distribution</a></li>
+<li class="chapter" data-level="2.3.4" data-path="w2title.html"><a href="w2title.html#using-z-scores-instead-of-raw-data-to-more-easily-find-probabilities-from-a-normal-distribution"><i class="fa fa-check"></i><b>2.3.4</b> Using z-scores instead of raw data to more easily find probabilities from a normal distribution</a></li>
+<li class="chapter" data-level="2.3.5" data-path="w2title.html"><a href="w2title.html#assignment"><i class="fa fa-check"></i><b>2.3.5</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="w3title.html"><a href="w3title.html"><i class="fa fa-check"></i><b>3</b> Probability Distributions II - Others</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="w3title.html"><a href="w3title.html#w3cover"><i class="fa fa-check"></i><b>3.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="3.2" data-path="w3title.html"><a href="w3title.html#w3read"><i class="fa fa-check"></i><b>3.2</b> Readings</a></li>
+<li class="chapter" data-level="3.3" data-path="w3title.html"><a href="w3title.html#w3lab"><i class="fa fa-check"></i><b>3.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="w3title.html"><a href="w3title.html#how-does-honeycomb-patterns-in-sandstone-form"><i class="fa fa-check"></i><b>3.3.1</b> How does honeycomb patterns in sandstone form?</a></li>
+<li class="chapter" data-level="3.3.2" data-path="w3title.html"><a href="w3title.html#study-image"><i class="fa fa-check"></i><b>3.3.2</b> Study Image</a></li>
+<li class="chapter" data-level="3.3.3" data-path="w3title.html"><a href="w3title.html#analyzing-count-data"><i class="fa fa-check"></i><b>3.3.3</b> Analyzing Count Data</a></li>
+<li class="chapter" data-level="3.3.4" data-path="w3title.html"><a href="w3title.html#w3assign"><i class="fa fa-check"></i><b>3.3.4</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="w4title.html"><a href="w4title.html"><i class="fa fa-check"></i><b>4</b> Sampling Distributions and Confidence Intervals</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="w4title.html"><a href="w4title.html#w4cover"><i class="fa fa-check"></i><b>4.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="4.2" data-path="w4title.html"><a href="w4title.html#w4read"><i class="fa fa-check"></i><b>4.2</b> Readings</a></li>
+<li class="chapter" data-level="4.3" data-path="w4title.html"><a href="w4title.html#w4lab"><i class="fa fa-check"></i><b>4.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="w4title.html"><a href="w4title.html#sampling-distribution-of-the-mean"><i class="fa fa-check"></i><b>4.3.1</b> Sampling Distribution of the Mean</a></li>
+<li class="chapter" data-level="4.3.2" data-path="w4title.html"><a href="w4title.html#confidence-intervals"><i class="fa fa-check"></i><b>4.3.2</b> Confidence Intervals</a></li>
+<li class="chapter" data-level="4.3.3" data-path="w4title.html"><a href="w4title.html#w4assign"><i class="fa fa-check"></i><b>4.3.3</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html"><i class="fa fa-check"></i><b>5</b> Hypothesis Testing Concepts</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6cover"><i class="fa fa-check"></i><b>5.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="5.2" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6read"><i class="fa fa-check"></i><b>5.2</b> Readings</a></li>
+<li class="chapter" data-level="5.3" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6lab"><i class="fa fa-check"></i><b>5.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="hypothesis-testing-concepts.html"><a href="hypothesis-testing-concepts.html#w6assign"><i class="fa fa-check"></i><b>5.3.1</b> Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html"><i class="fa fa-check"></i><b>6</b> Hypothesis Testing I</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7cover"><i class="fa fa-check"></i><b>6.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="6.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7read"><i class="fa fa-check"></i><b>6.2</b> Readings</a></li>
+<li class="chapter" data-level="6.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#w7lab"><i class="fa fa-check"></i><b>6.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#examining-with-fake-data"><i class="fa fa-check"></i><b>6.3.1</b> Examining with Fake Data</a></li>
+<li class="chapter" data-level="6.3.2" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#one-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.2</b> One-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.3" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#two-sample-hypothesis-testing"><i class="fa fa-check"></i><b>6.3.3</b> Two-Sample Hypothesis Testing</a></li>
+<li class="chapter" data-level="6.3.4" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#gps-dataset"><i class="fa fa-check"></i><b>6.3.4</b> GPS Dataset</a></li>
+<li class="chapter" data-level="6.3.5" data-path="hypothesis-testing-i.html"><a href="hypothesis-testing-i.html#lab-assignment"><i class="fa fa-check"></i><b>6.3.5</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="anova.html"><a href="anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="anova.html"><a href="anova.html#w8cover"><i class="fa fa-check"></i><b>7.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="7.2" data-path="anova.html"><a href="anova.html#w8read"><i class="fa fa-check"></i><b>7.2</b> Readings</a></li>
+<li class="chapter" data-level="7.3" data-path="anova.html"><a href="anova.html#w8lab"><i class="fa fa-check"></i><b>7.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="anova.html"><a href="anova.html#analysis-of-variance-in-r"><i class="fa fa-check"></i><b>7.3.1</b> Analysis of Variance in R</a></li>
+<li class="chapter" data-level="7.3.2" data-path="anova.html"><a href="anova.html#w8labass"><i class="fa fa-check"></i><b>7.3.2</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>8</b> Linear Regression</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="linear-regression.html"><a href="linear-regression.html#w9cover"><i class="fa fa-check"></i><b>8.1</b> What we cover this week</a></li>
+<li class="chapter" data-level="8.2" data-path="linear-regression.html"><a href="linear-regression.html#w9read"><i class="fa fa-check"></i><b>8.2</b> Readings</a></li>
+<li class="chapter" data-level="8.3" data-path="linear-regression.html"><a href="linear-regression.html#w9lab"><i class="fa fa-check"></i><b>8.3</b> Lab</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-regression.html"><a href="linear-regression.html#w9labass"><i class="fa fa-check"></i><b>8.3.1</b> Lab Assignment</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li> &nbsp Instructor: Dr. Colin Robertson</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">GESC-258 Schedule</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hypothesis-testing-concepts" class="section level1" number="5">
+<h1><span class="header-section-number">Week 5</span> Hypothesis Testing Concepts</h1>
+<p>This week we introduce hypothesis testing - a very important concept and methodological framework.</p>
+<div id="w6cover" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> What we cover this week</h2>
+<ul>
+<li>The null and alternative hypotheses</li>
+<li>P-values</li>
+<li>Significance level</li>
+<li>Test statistics</li>
+<li>Type I and Type II errors</li>
+<li>One and two-tailed tests</li>
+</ul>
+</div>
+<div id="w6read" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Readings</h2>
+<p><a href="https://onlinestatbook.com/2/logic_of_hypothesis_testing/logic_hypothesis.html" target="_blank">Chapter XI in online textbook</a></p>
+<p>Key sections:</p>
+<ul>
+<li>Introduction</li>
+<li>Significance Testing</li>
+<li>Type I and Type II Errors</li>
+<li>One- and Two-Tailed Tests</li>
+<li>Interpreting Significant Results</li>
+<li>Interpreting Non-Significant Results</li>
+</ul>
+</div>
+<div id="w6lab" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Lab</h2>
+<p>This week’s lab is a little different. Instead of calculating quantities from data (which we will do next week, don’t worry), we are going to focus on intepreting existing research results, to get a feel for how these tools are actually used. In particular, we are going to focus on a t-test for a sample mean, and hypothesis tests about sample means.</p>
+<p>Your first objective will be to find a scientific paper that interests you. Go to <a href="http://scholar.google.ca">google scholar</a> and to search enter “t-test” AND “something that you want to read research about”. Make sure you include the quotation marks. For example I will use “t-test” AND “polar bears” just to get started. This brings up <a href="https://scholar.google.ca/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=%22t-test%22+and+%22polar+bear%22&amp;btnG=">this page of search results</a>. Now you probably do not want to select the first article you see. You want to select an article based on the following criteria:</p>
+<ul>
+<li>is it actually about the topic your are intersted in</li>
+<li>is a t-test for a mean used in the analysis</li>
+<li>can you understand the paper</li>
+<li>do you have access to the full text of the paper</li>
+</ul>
+<p>You may have to go in through the library website to gain access to a paper, othertimes you will see a link from Google Scholar directly to a PDF of the paper. Your goal is to select a paper of interest which you will then answer questions (below) about for this week’s lab assignment.</p>
+<p>On the second page of results, I found the <a href="https://www.int-res.com/articles/meps_oa/m441p273.pdf">following paper</a> which I thought met the criteria above. T-tests were used here to compare the mean litter size among samples of polar bear cubs in two regions (Hopen Island vs. the rest of Svalbarad), among other things.</p>
+<div id="w6assign" class="section level3" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Assignment</h3>
+<p>Once you find a paper you want to work with for this lab, answer the following questions below:</p>
+<ol style="list-style-type: decimal">
+<li><p>Write a paragraph summarizing your paper. What were the research objectives, what data were analyzed, what did the results show? (out of 5)</p></li>
+<li><p>What specific hypothesis was tested using a t-test in this paper? Was it upper, lower, or two-tailed? What was the result? Include a screenshot of the result from the paper. (out of 5)</p></li>
+<li><p>What limitations are there in the study? What other types of analysis or data could the researchers have used to address their objective(s)? (out of 4)</p></li>
+<li><p>What does the p-value reported in the paper mean? Include a screenshot of the result from the paper. (out of 3)</p></li>
+<li><p>What was the significance level of the hypothesis test in the paper? What does it mean? Include a screenshot of the result from the paper. (out of 3)</p></li>
+</ol>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="w4title.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="hypothesis-testing-i.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["GESC258-2020.pdf", "GESC258-2020.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
